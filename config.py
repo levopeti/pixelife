@@ -1,0 +1,59 @@
+"""
+Configuration file for artificial life simulation
+Contains all adjustable parameters for the simulation
+"""
+
+# World parameters
+WORLD_WIDTH = 200
+WORLD_HEIGHT = 200
+CELL_SIZE = 15
+
+# Resource parameters
+INITIAL_FOOD_COUNT = 500
+INITIAL_PLANT_COUNT = 300
+FOOD_RESPAWN_RATE = 0.01
+PLANT_GROWTH_RATE = 0.005
+SUNLIGHT_INTENSITY = 10
+
+# Creature parameters
+INITIAL_CREATURE_COUNT = 20
+MAX_CREATURES = 1000
+CREATURE_MAX_ENERGY = 100
+CREATURE_ENERGY_DECAY = 0.5
+MOVEMENT_COST = 1.0
+REPRODUCTION_THRESHOLD = 80
+REPRODUCTION_COST = 40
+
+# Genetics parameters
+MUTATION_RATE = 0.1
+CHROMOSOME_LENGTH = 16
+CROSSOVER_RATE = 0.7
+
+# Brain/Learning parameters
+Q_LEARNING_RATE = 0.1
+Q_DISCOUNT_FACTOR = 0.9
+Q_EXPLORATION_RATE = 0.3
+VISION_RANGE = 5
+
+# Simulation parameters
+FAST_MODE_TPS = 1000
+VISUAL_MODE_TPS_BASE = 10
+
+# Visualization parameters
+INITIAL_ZOOM = 1.0
+MIN_ZOOM = 0.1
+MAX_ZOOM = 4.0
+ZOOM_SPEED = 0.1
+PAN_SPEED = 10
+
+# Save/Load parameters
+SAVE_DIRECTORY = "saves"
+AUTO_SAVE_INTERVAL = 500
+
+# Colors (RGB)
+COLOR_EMPTY = (20, 20, 20)
+COLOR_WALL = (60, 60, 60)
+COLOR_FOOD = (200, 150, 0)
+COLOR_PLANT = (50, 200, 50)
+COLOR_CREATURE = (100, 150, 255)
+COLOR_SUNLIGHT = (255, 255, 200)
